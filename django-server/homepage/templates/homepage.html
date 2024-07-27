@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <body>
+        <h1>Big Proxies</h1>
+        <div id="site-container">
+            <form action="/homepage/" method="post">
+                {% csrf_token %}
+                {{ deck_form }}
+                {{ params_form }}
+                <input type="submit" value="Submit">
+            </form>
+            <div id="image-container">
+                {% for image in card_images %}
+                    <img loading="lazy" src = {{ image }}"/>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>

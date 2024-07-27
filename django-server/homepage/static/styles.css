@@ -1,0 +1,28 @@
+body {
+    font-size: 20px;
+}
+
+#deck_input {
+    resize: vertical;
+    font-size: 20px;
+}
+
+ h1 {
+     text-align: center;
+ }
+
+#site-container {
+    display:flex;
+    text-align:center;
+    flex-direction:column;
+}
+
+#image-container {
+    text-align: center;
+
+}
+
+img {
+    width: 200px;
+}
+
